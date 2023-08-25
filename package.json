@@ -1,0 +1,33 @@
+{
+    "name": "reminder_bot",
+    "version": "1.0.0",
+    "description": "bot for reminding people of things",
+    "main": "src/app.ts",
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "run": "ts-node-dev src/app.ts",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/itIsMaku/reminder_bot.git"
+    },
+    "author": "maku#5434 (itismaku)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/itIsMaku/reminder_bot/issues"
+    },
+    "homepage": "https://github.com/itIsMaku/reminder_bot#readme",
+    "dependencies": {
+        "@discordjs/rest": "^0.5.0",
+        "axios": "^1.4.0",
+        "colors": "^1.4.0",
+        "discord-api-types": "^0.36.1",
+        "discord.js": "^13.8.1",
+        "discordx": "^9.8.0",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.1.6",
+        "winston": "^3.10.0"
+    }
+}
