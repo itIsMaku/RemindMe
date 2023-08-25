@@ -27,7 +27,9 @@ export const command = registerCommand(
                 userReminders
                     .map(
                         (reminder: any) =>
-                            `**${reminder.text}** - ${reminder.time}`
+                            `**${reminder.text}** - ${new Date(
+                                reminder.now + reminder.end
+                            ).toLocaleString()}`
                     )
                     .join("\n")
             )
