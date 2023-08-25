@@ -33,5 +33,15 @@ export async function worker() {
                 );
             }
         }
+
+        client.user?.setPresence({
+            activities: [
+                {
+                    name: `${reminders.length} reminds`,
+                    type: "LISTENING",
+                },
+            ],
+            status: reminders.length > 0 ? "online" : "idle",
+        });
     }, 1000);
 }

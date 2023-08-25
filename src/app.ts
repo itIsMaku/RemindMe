@@ -38,16 +38,6 @@ client.on("ready", async () => {
     registerCommands();
     registerEvents();
 
-    client.user?.setPresence({
-        activities: [
-            {
-                name: "0 reminds",
-                type: "LISTENING",
-            },
-        ],
-        status: "idle",
-    });
-
     logger.info("Bot | Successfully started.");
 
     worker();
