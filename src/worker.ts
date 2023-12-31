@@ -43,5 +43,5 @@ export async function worker() {
             ],
             status: reminders.length > 0 ? "online" : "idle",
         });
-    }, 1000);
+    }, 60 * 1000);
 }
